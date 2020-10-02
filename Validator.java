@@ -1,8 +1,6 @@
 import java.util.Scanner;
-public class MyClass
+public class Validator
 {
-    
-    
     int validateStrength(String str)
     {
         int cri = 0;
@@ -63,11 +61,6 @@ public class MyClass
             System.out.println("6");
         }
         
-        
-        
-        
-        
-        
         boolean consNo = false;
         for(int i=0; i < ( str.length() - 1 ); i++)
         {
@@ -88,9 +81,6 @@ public class MyClass
             System.out.println("7");
         }
         
-        
-        
-        
         boolean consUpper = false;
         for(int i=0; i < ( str.length() - 2 ); i++)
         {
@@ -105,11 +95,7 @@ public class MyClass
             cri++;
             System.out.println("8");
         }
-        
-        
-        
-        
-        
+       
         boolean consLower = false;
         for(int i=0; i < ( str.length() - 2 ); i++)
         {
@@ -119,6 +105,7 @@ public class MyClass
                     break;
                 }
         }
+        
         if (consLower)
         {
             cri++;
@@ -139,9 +126,6 @@ public class MyClass
         else{
             return 3;
         }
-        
-        
-        
     }
     
     public static void main(String args[])
@@ -149,10 +133,7 @@ public class MyClass
       String pswd;
       Scanner in = new Scanner(System.in);
       pswd = in.nextLine();
-      MyClass mc = new MyClass();
-      
-      System.out.println(mc.validateStrength(pswd));
-      
-    }
-        
+      Validator v = new Validator();
+      System.out.println(v.validateStrength(pswd));
+    }      
 }
