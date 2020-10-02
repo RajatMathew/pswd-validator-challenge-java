@@ -1,4 +1,4 @@
-# pswd-validator-java
+# Password Validator using Java
 
-Question
+This was part of a coding challenge conducted by Intuit India.
 https://www.intuit.com/careers/programs/students-and-grads/india/coding-challenges/
